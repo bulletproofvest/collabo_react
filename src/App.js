@@ -1,4 +1,3 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
 import './App.css';
 
 import MenuItems from './ui/Menuitems';
@@ -8,17 +7,7 @@ function App() {
   const appName = "IT Academy Coffee Shop";
   return (
     <>
-
-    
-      <Navbar bg="dark" variant="dark" expand="lg">
-        <Container>
-          <Navbar.Brand href='/'>{appName}</Navbar.Brand>
-          <Nav className="me-auto">
-            <MenuItems>
-            </MenuItems>
-          </Nav>
-        </Container>
-      </Navbar>
+      <MenuItems appName={appName} />
 
       <AppRoutes />
 
